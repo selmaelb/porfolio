@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+body .header{
+    position:sticky;
+    top:0;
+}
+
+body .header .fixation-header .navbar {
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #a8cef6;
+    align-items: center;
+    height: 80px;
+}
+
+body .header .fixation-header .navbar .profile {
+    display : flex;
+    align-items: center;
+}
+
+body .header .fixation-header .navbar .profile img{
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+body .header .fixation-header .navbar .profile h1{
+    margin-left: 15px;
+    font-size: 20px;
+
+}
+body .header .fixation-header .navbar .profile h1 a{
+    text-decoration: none;
+}
+
+body .header .fixation-header .navbar .liste{
+    margin-right: 15px;
+    display: flex;
+    list-style-type: none;
+}
+
+body .header .fixation-header .navbar .liste li{
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #a8cef6 ;
+}
+
+body .header .fixation-header .navbar .liste li:hover{
+    border-bottom: 1px solid #0e3354 ;
+}
+
+body .header .fixation-header .navbar .liste a{
+    text-decoration: none;
+}
+
+body .header .fixation-header .navbar .burger{
+    display: none;
+}
+
+
+
+
+
+
+
+
+.page-content{
+    margin: 4%;
+    margin-bottom: 0;
+}
+
+.page-content .presentation{
+    margin-top: 5%;
+    max-width: 80%;
+}
+
+.page-content .presentation h1{
+    margin : 0;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5vw;
+}
+
+.page-content .presentation p{
+    line-height: 30px;
+    color : #0e3354;
+    font-size: 20px;
+}
+
+.page-content .presentation button{
+    background-color: inherit;
+    border : none;
+    outline: none;
+    padding: 0;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #0e3354 ;
+    cursor: pointer;
+}
+
+.page-content .presentation button a{
+    text-decoration: none;
+}
+
+.page-content .presentation button:hover{
+    background-color: #0e3354;
+    color:#ffffff;
+    border-bottom-color: #ffffff ;
+}
+
+
+
+
+.page-content .presentation-image{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.page-content .presentation-image .image{
+    text-align: center;
+}
+
+.page-content .presentation-image .image img{
+    max-width: 70%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+.page-content .parcours-section .cv {
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+}
+
+.page-content .parcours-section .cv .btn{
+    display: inline-block;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    text-decoration:none;
+    margin-bottom: 5%;
+    background:#dee7ee;
+    margin-right: 5%;
+}
+
+.page-content .parcours-section .image{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.page-content .parcours-section .image img{
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.page-content .competences-section{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.page-content .competences-section h1{
+    font-size: 3.5vw;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.page-content .competences-section .grid{
+    margin-top: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.page-content .competences-section .grid .grid_item{
+    width: 100%;
+}
+
+.page-content .competences-section .grid .grid_item .image_competences{
+    text-align: center;
+}
+
+.page-content .competences-section .grid .grid_item .image_competences img{
+    max-width: 80%;
+}
+
+.page-content .competences-section .grid .grid_item h3{
+    font-size: 2vw;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.page-content .competences-section .grid .grid_item .liste{
+    list-style-type: none;
+}
+
+.page-content .competences-section .grid .grid_item .liste li h4{
+    font-size: 1.5vw;
+}
+
+.page-content .competences-section .grid .grid_item .liste li h4:hover{
+    color:#be2323;
+}
+
+.page-content .competences-section .grid .grid_item .liste li p{
+    font-size: 1.25vw;
+    color: #4c5155;
+}
+
+
+
+
+
+
+
+
+.page-content .project-section{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.page-content .project-section h1{
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.page-content .project-section .project{
+    margin-top: 0%;
+    display:flex;
+    flex-wrap: wrap;
+    align-self: center;
+    max-width: 100%;
+    text-align: center;
+    justify-content:center;
+}
+
+.page-content .project-section .project .project-item{
+    max-width: 30%;
+    margin-right: 15px;
+}
+.page-content .project-section .project .project-item .presentation_image{
+    text-align: center;
+}
+
+.page-content .project-section .project .project-item h4{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.page-content .project-section .project .project-item img{
+    margin-top: 10%;
+    max-width: 80%;
+    height: auto;
+    border-radius: 10%;
+    transition: filter 0.5s;
+}
+
+.page-content .project-section .project .project-item img:hover{
+    filter:grayscale(50);
+}
+
+.page-content .project-section .project .project-item p{
+    font-size: 15px;
+    font-weight: lighter;
+    margin-top: 0;
+    color:rgb(90, 86, 86);
+}
+
+
+
+
+
+.page-content .interet-section .image{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.page-content .interet-section .image img{
+    max-width: 100%;
+}
+
+
+
+
+
+.footer{
+    margin: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    background-color: black;
+    height: auto;
+    color: #ffffff; 
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .coordonnees{
+    width: 80%;
+}
+
+.footer .coordonnees h3{
+    padding-top: 10px;
+    margin-left: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+
+.footer .coordonnees p{
+    margin:0;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+.footer .image{
+    margin: auto;
+}
+
+.footer .image img{
+    width: 100px;
+}
+
+.footer .image img:hover{
+    width: 200px;
+}
+
+
+
+@media screen and (max-width: 830px){
+
+    body .header .fixation-header .navbar{
+        justify-content: space-between;
+        align-items: center;
+        height:50px;
+    }
+
+    body .header .fixation-header .navbar .profile img{
+        height: 30px;
+        width: 30px;
+    }
+
+    body .header .fixation-header .navbar .profile h1{
+        font-size: 15px;
+    }
+
+    body .header .fixation-header .navbar .liste{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        margin-top: 0;
+        top : 50px;
+        left: 110%;
+        overflow: hidden;
+        opacity: 0;
+        height: calc(100vh - 55px);
+        background: #a8cef6;
+        transition: all .4s ease-out;
+    }
+
+    body .header .fixation-header .navbar .liste li{
+        margin-bottom: 15px;
+    }
+
+    body .header .fixation-header .navbar .show-liste{
+        opacity: 1;
+        padding-left: 0;
+        width: 100%;
+        left: 0;
+    }
+
+    body .header .fixation-header .navbar .liste li a{
+        display: block;
+    }
+
+    body .header .fixation-header .navbar .burger{
+        display: block;
+        content:"";
+        margin-right: 15px;
+        background: none;
+        border: none;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+
+    
+
+
+
+    .page-content .presentation{
+        margin-top: 10%;
+        max-width: 100%;
+    }
+
+    .page-content .presentation h1{
+        font-size: 7vw;
+    }
+    
+    .page-content .presentation p{
+        font-size: 3.5vw;
+    }
+
+    .page-content .presentation button{
+        font-size: 3.5vw;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+    .page-content .competences-section{
+        margin-top: 15%;
+    }
+    
+    .page-content .competences-section h1{
+        font-size: 7vw;
+    }
+    
+    .page-content .competences-section .grid .grid_item{
+        width: 100%;
+    }
+
+    .page-content .competences-section .grid .grid_item h3{
+        font-size: 5vw;
+    }
+
+    .page-content .competences-section .grid .grid_item .image_competences img{
+        max-width: 100%;
+    }
+
+    .page-content .competences-section .grid .grid_item .liste{
+        margin-right:40px;
+    }
+
+    .page-content .competences-section .grid .grid_item .liste li h4{
+        font-size: 3.80vw;
+    }
+
+    .page-content .competences-section .grid .grid_item .liste li p{
+        text-align: justify;
+        font-size: 3.5vw;
+    }
+
+
+
+
+
+
+    .page-content .project-section{
+        margin-top: 15%;
+    }
+    .page-content .project-section h1{
+        font-size: 1.5em;
+    }
+
+    .page-content .project-section .project .project-item{
+        margin-right: 0;
+        max-width: 100%;
+    }
+
+
+
+
+
+    .footer{
+        padding-bottom: 5%;
+    }
+
+    .footer .coordonnees{
+        width: 100%;
+    }
+
+    .footer .coordonnees h3{
+        font-size: 7vw;
+    }
+    
+    .footer .coordonnees p{
+        font-size: 3.5vw;
+    }
+    
+    .footer .image img{
+        width: 40px;
+    }
+    
+    
+}
