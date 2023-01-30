@@ -320,6 +320,12 @@ body .header .fixation-header .navbar .burger{
     margin-bottom: 5%;
 }
 
+.page-content .ps7 .proto{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .page-content .ps7 .image img{
     max-width: 100%;
 }
@@ -566,6 +572,33 @@ body .header .fixation-header .navbar .burger{
         max-width: 100%;
     }
 
+
+
+
+    .page-content .ps7 h1{
+        font-size: 7vw;
+    }
+
+    .page-content .ps7 p{
+        font-size: 3.5vw;
+    }
+
+    .page-content .ps7 .proto .figma{
+        max-width: 100%;
+    }
+    
+    .page-content .ps7 .video{
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    .page-content .ps7 .video video{
+        max-width: 100%;
+    }
+
+    .page-content .ps7 .rapport {
+        margin-bottom: 5%;
+    }
 
 
 
