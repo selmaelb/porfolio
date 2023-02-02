@@ -418,6 +418,12 @@ body .header .fixation-header .navbar .burger{
     font-size: 15px;
 }
 
+.footer .coordonnees a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
 .footer .image{
     margin: auto;
 }
