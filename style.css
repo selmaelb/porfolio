@@ -129,7 +129,7 @@ body .header .fixation-header .navbar .burger{
     text-align: center;
 }
 
-.page-content .presentation-image .image img{
+.page-content .presentation-image .image video{
     max-width: 70%;
     height: auto;
 }
@@ -511,6 +511,11 @@ body .header .fixation-header .navbar .burger{
 
     .page-content .presentation button{
         font-size: 3.5vw;
+    }
+
+    .page-content .presentation-image .image video{
+        max-width: 70%;
+        height: auto;
     }
     
 
