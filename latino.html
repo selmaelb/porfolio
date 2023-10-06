@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Portfolio Selma El Babarti</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    </head>
+
+<body>
+    <header class="header">
+        <div class="fixation-header">
+            <nav class="navbar">
+                <div class = "profile">
+                    <img src="img/me.jpg" width="100">
+                    <h1>
+                        <a href="index.html" style="color: inherit">Selma EL BABARTI</a>
+                    </h1>
+                </div>
+                <ul id="listeMobile" class="liste">
+                    <li><a href="parcours.html" style="color: inherit" id="lienPageParcours">Mon parcours</a></li>
+                    <li><a href="compétences.html" style="color: inherit" id="lienPageComp">Mes compétences</a></li>
+                    <li><a href="projets.html" style="color: inherit"  id="lienPageProjets">Mes projets</a></li>
+                    <li><a href="interet.html" style="color: inherit" id="lienPageCentre">Mes centres d'intérêt</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/selma-el-babarti/"
+                        target="_BLANK" style="color: inherit">
+                        <svg width="20px" height="20" class="icon linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+                <button id="burgerid" class="burger">
+                    <a href="#" style="color: inherit">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                    </a>
+                </button>
+
+                <button id="burgerid2" class="burger" style="display:none">
+                    <a href="#" style="color: inherit">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"></path>
+                        </svg>                    
+                    </a>
+                </button>
+               
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-content">
+        <section class="ps7" id="projet">
+            <h1>Latino'trip</h1>
+            <div class="texte">
+                <p>Dans le cadre de ma première année de Master Cultures Numériques, j'ai pu réaliser un projet qui consiste à créer un site web dynamique sur le sujet de notre choix. Pour notre projet, nous avons choisi de créer un site web à destination des enfants sur le thème des pays d’amériques latines.<br><br>
+                    Ce projet s’est déroulé en 3 phases : <br>
+                    - La première phase s’articulait autour du choix de notre sujet, les raisons de notre choix, et l’élaboration de la maquette de notre site (en utilisant Figma). <br>
+                    - La deuxième phase consistait en le développement de la partie statique de notre site. <br>
+                    - Enfin, la dernière phase du projet consistait en l’élaboration de la partie dynamique avec l’introduction d’une API pour effectuer des requêtes sur notre base de données (en utilisant SQLiteStudio pour créer la base de données et Nocodb pour les requêtes API).
+                </p>
+                <h2>I - Le choix du sujet</h2>
+                <h3>1. Quelle cible ?</h3>
+                <p>Les enfants sont naturellement curieux et veulent découvrir le monde qui les entoure. C'est pourquoi il est important de leur offrir des expériences éducatives ludiques qui stimulent leur curiosité et leur permettent de développer leur culture. Lorsque les enfants s'amusent en apprenant, ils sont plus susceptibles de s'impliquer et d'apprécier l'expérience, ce qui augmente leur motivation à apprendre davantage.
+                    Lorsque les enfants sont exposés à une variété de sujets éducatifs dès leur plus jeune âge, ils ont tendance à développer une curiosité naturelle pour le monde qui les entoure. L’objectif de notre site sera donc d’éveiller l'intérêt des enfants pour un continent (l’Amérique du Sud), et certaines villes en particuliers d’Amérique Latine afin de susciter leur intérêt pour des sujets divers et variés, auxquels ils ne sont pas souvent confrontés.
+                    Notre site se présentera donc de manière ludique, sous forme de “ livre à feuilleter” et des textes seront courts et simples à comprendre.
+                </p>
+                <h3>2. La base de données</h3>
+                <p>Pour que notre site web puisse prendre forme, nous allons le coder en HTML et CSS pour la partie statique (apparence globale du site), puis nous allons y ajouter du JavaScript qui pourra interagir avec une API pour le rendre plus dynamique. Voici la base de données de notre site :</p>
+                <img src="img/latino_bdd.jpg"/>
+                <p>Notre base de données et composée de 6 tables : <br>
+                    - La table Pays : chaque pays contient un identifiant, un nom, une description, un drapeau et une image. La table pays est reliée aux quatres autres tables, c’est-à-dire qu’un pays va avoir une ou plusieurs cuisine, culture, nature et sport. <br>
+                    - La table Cuisine : chaque spécialité culinaire est composée d’un identifiant, d’une description et d’une image.<br>
+                    - La table Culture : chaque culture est composée d’un identifiant, d’une description et d’une image.<br>
+                    - La table Nature : chaque nature est composée d’un identifiant, d’une description et d’une image.<br>
+                    - La table Sport : chaque sport est composé d’un identifiant, d’une description et d’une image.<br>
+                    - Enfin, nous avons une table supplémentaire qui concerne l'administrateur (qui contient un nom, un prénom, un identifiant, une adresse mail et un mot de passe). Cette table nous a servi pour la partie connexion de notre site. 
+                </p>
+                <h3>3. Les user cases</h3>
+                <p>Nous avons donc définit des cas d’usages afin de mieux comprendre toutes les fonctionnalités de notre site web : <br>
+                    Comme expliqué précédemment l’administrateur pourra modifier la base de données à propos des pays présentés sur le site. Si cela est possible pour nous, nous aimerions que l’administrateur puisse également modifier le quizz.
+                    Le quizz est un jeu où l’enfant peut jouer sans s’identifier. Il aura simplement à choisir les bonnes réponses pour avoir des points. Nous pensons réaliser un quizz où le joueur doit trouver les drapeaux des pays présentés.
+                    L’utilisateur peut consulter le menu, où le concept du site lui est présenté et où il peut sélectionner l’article qu’il souhaite lire à propos du pays choisi.
+                </p>
+                <img src="img/laitno_usercases.png"/>
+                <h3>4. Le moodboard</h3>
+                <p>Etant donné que notre site web s'adresse principalement à des enfants, nous avons imaginé des couleurs vives et des illustrations assez enfantines. Nous souhaitons également
+                    que le site soit très intuitif afin de les guider au maximum dans leur navigation sans les perdre. Notre site devra donc respecter des critères d’UX assez strictes, notamment concernant le guidage et le contrôle des actions explicites.
+                </p>
+                <img src="img/latino_moodboard.png"/>
+                <h3>5. La maquette</h3>
+                <div class="proto">
+                    <iframe class="figma" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fxks7qP5o6nbsZ8aa8iXDq8%2FMaquette-projet-web%3Fpage-id%3D0%253A1%26node-id%3D2-2%26starting-point-node-id%3D2%253A2%26scaling%3Dscale-down%26mode%3Ddesign%26t%3DW8mbu7NQmF2Quv9D-1" allowfullscreen></iframe>
+                </div>
+                <p>L’administrateur aura la possibilité de modifier, supprimer, ou ajouter un pays à la base donnée.
+                    S' il souhaite modifier un pays, l’administrateur clique sur l’edit pays et choisit quelle table il va modifier pour ce pays. Par exemple, sa cuisine, où il pourra modifier son texte et son image, ajouter un autre paragraphe sur une autre cuisine ou en supprimer.
+                </p>
+                <h2>II - Le site web</h2>
+                <h3>1. Le site statique</h3>
+                <div class="rapport">
+                    <a href="https://github.com/selmaelb/latinotrip.git" class="btn" target="_BLANK" role="button">Voir le site statique (GitHub)</a>
+                </div>
+                <h3>2. Le site dynamique</h3>
+                <h4>Création de l'API</h4>
+                <p>Afin de rendre notre site dynamique, nous avons dû créer une API qui puisse interagir avec notre base de données via Javascript. <br>
+                    Pour cela, nous avons d’abord créé notre base de données sur SQLite Studio : <br>
+                    Nous avons d’abord créé nos 6 tables Pays, Cuisine, Nature, Culture, Sport et Administrateur.
+                    Puis nous avons créé des tables relationnelles qui feraient le lien entre les pays et leurs caractéristiques grâce à des clés étrangères. Nous avons fait cela pour les tables PaysCuisine, PaysCulture, PaysNature et PaysSport. <br>
+                    Nous avons ensuite importé cette base de données dans nocodb et cet outil a permi de créer des listes de culture, nature, cuisine et sport pour chaque pays de la manière suivante :
+                </p>
+                <div class="carrousel">
+                    <div><img src="img/latino_screenbdd.png"></div>
+                    <div><img src="img/latino_screenbdd2.png"></div>
+                    <div><img src="img/latino_screen_nocodb.png"></div>
+                </div>
+                <script>
+                    $(document).ready(function(){
+                      $('.carrousel').slick({
+                        dots: true, // Active les points indicateurs de pagination
+                        autoplay: true, // Active la lecture automatique
+                        autoplaySpeed: 2000, // Définit la vitesse de lecture automatique (en millisecondes)
+                      });
+                    });
+                </script>
+                <p>A partir de là, nous avons pu mettre en place un reverse proxy et un serveur afin de faire tourner notre site et nocodb sur les mêmes ports et effectuer des requêtes API pour interagir avec notre base de données.
+                </p>
+                <div class="carrousel">
+                    <div><img src="img/latino_proxy.png"></div>
+                    <div><img src="img/latino_proxy2.png"></div>
+                </div>
+                <h4>Les fonctionnalités du site</h4>
+                <p>Grâce à cette méthode, nous pouvons afficher en temps réel les bonnes informations selon ce que l'utilisateur sélectionne (pays, nature, culture, cuisine, sport). Voici un exemple avec le Brésil.
+                    Tout d’abord, l’utilisateur arrive sur la page d’accueil où il peut sélectionner le pays de son choix. <br>
+                    Une courte présentation de ce pays s’affiche alors en tant réel (grâce à l’id du pays que nous avons récupéré). <br>
+                    A chaque fois que l’utilisateur clique sur un bouton : cuisine, nature, sport ou culture, les informations relatives au pays en question s’affichent grâce à des requêtes utilisant la méthode GET.
+                    Cela est possible grâce à notre requête API qui va parcourir parmi la liste cuisine du pays en question par exemple, les informations relatives à ces cuisines là pour les afficher.
+                </p>
+                <div class="carrousel">
+                    <div><img src="img/latino_screen_site.png"></div>
+                    <div><img src="img/latino_screen_site2.png"></div>
+                    <div><img src="img/latino_screen_site3.png"></div>
+                    <div><img src="img/latino_screen_site4.png"></div>
+                    <div><img src="img/latino_screen_site5.png"></div>
+                    <div><img src="img/latino_screen_site6.png"></div>
+                </div>
+                <p>Cela fonctionne également pour l’administrateur du site : tout d’abord, l’administrateur peut accéder à son compte via la page de connexion. Lorsqu’il entre les mauvais identifiants un message d’avertissement apparaît pour le prévenir de son erreur et l’accès ne lui est autorisé que si le mail et le mot de passe sont les bons (la vérification se fait grâce à une requête GET et une comparaison avec les données entrées par l’utilisateur). <br>
+                    Une fois authentifié, l’administrateur peut agir sur la base de données pour modifier un pays et les informations relatives à ce pays :
+                </p>
+                <div class="carrousel">
+                    <div><img src="img/latino_screen_admin.png"></div>
+                    <div><img src="img/latino_screen_admin2.png"></div>
+                    <div><img src="img/latino_screen_admin3.png"></div>
+                </div>
+                <p>Une fois le pays sélectionné, les informations relatives à ce pays sont directement pré-remplies dans les champs requis. Cela permet une modification plus facile des données pour l’administrateur. L’administrateur peut donc désormais modifier les informations (comme l’image du pays, sa description, ses cultures, etc) et enregistrer ses modifications qui seront sauvegardées dans la base de données grâce à une méthode ‘PATCH’ qui met à jour la base de données avec les nouvelles modifications apportées.
+                </p>
+                <h2>III - Bilan sur le projet</h2>
+                <h3>Retour refléxif</h3>
+                <p>Avant de commencer notre projet, nous avions pour objectif de pouvoir ajouter un mini-jeu permettant aux utilisateurs de deviner les drapeaux d’un pays. Cela aurait pu se faire grâce à des méthodes GET qui comprenaient les inputs entrés par les utilisateurs avec les vrais id des pays concernées (un peu de la même façon que nous avions procédé pour la page de connexion). Malheureusement, nous n’avons pas pu aboutir à ce projet par manque de temps. <br>
+                    De plus, nous pensions qu’il serait aussi intéressant de pouvoir créer ou supprimer un pays avec des méthodes POST et DELETE, mais nous avons finalement choisi de modifier uniquement les pays en raison du temps imparti et du fait que nous pensions que la modification d’un pays était plus complète en terme de code. En effet, modifier un pays suggère d’agir les tables relationnelles : à chaque fois que nous ajouterons ou enlevions une cuisine d’un pays par exemple, il ne suffit pas de simplement modifier la liste cuisine du pays mais aussi de modifier la liste de pays d’une cuisine. Par exemple, si nous ajoutons la spécialité culinaire Empanadas pour le pays Cuba, alors il faut ajouter Empanadas à la Cuisine List de la table Pays et Cuba à la Pays List de la table Cuisine. Cela nécessite donc d’agir sur la table relationnelle PaysCuisine qui liait ces deux tables grâce en ajoutant une ligne conciliant ces 2 pays grâce à une requête POST. de la même façon, si nous retirons la spécialité culinaire Empanadas du pays Cuba, alors il faut supprimer cette ligne de la table PaysCuisine grâce à une requête DELETE. <br>
+                    La modification des pays nécessite alors plusieurs requêtes et celle-ci nous a permis de manipuler à la fois des requêtes GET (pour pré-remplir les champs des pays sélectionnés), POST (pour créer des relations entre les caractéristiques et les pays), DELETE (pour supprimer des relations entre les caractéristiques et les pays) et PATCH (pour mettre à jour la base de données modifiée).
+                </p>
+                <h3>Gestion de projet</h3>
+                <p>Pour que notre projet se passe au mieux, nous avons établi une matrice des risques afin d’identifier et d’éviter les risques qui pourraient affecter notre projet. <br>
+                    Cette méthode nous a été très utile et nous a permis de gagner du temps sur des risques que nous avions prévu et donc de minimiser les effets négatifs sur la qualité de notre projet. Parmis les risques : perte de données, absence d'un membre du groupe, mauvaise répartition du travail, manque de communication, etc.</p>
+                <img src="img/latino_gestion.png"/>
+            </div>
+        </section>
+
+   </section>
+
+   <footer class="footer">
+        <div class="coordonnees">
+            <h3 id="contact">Mes coordonnées</h3>
+            <p><a href="mailto:selma.elbabarti@gmail.com">selma.elbabarti@gmail.com</a></p>
+            <p><a href="mailto:selma.el-babarti@etu.univ-nantes.fr">selma.el-babarti@etu.univ-nantes.fr</a></p>
+            <p>07.50.23.05.18</p>
+        </div>
+        <div class="image">
+            <img src="img/logo.png" ></img>
+        </div>
+    </footer>
+    <script src='main.js'></script>
+</body>
+</html>
