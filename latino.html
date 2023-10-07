@@ -62,7 +62,7 @@
             <h1>Latino'trip</h1>
             <div class="texte">
                 <p>Dans le cadre de ma première année de Master Cultures Numériques, j'ai pu réaliser un projet qui consiste à créer un site web dynamique sur le sujet de notre choix. Pour notre projet, nous avons choisi de créer un site web à destination des enfants sur le thème des pays d’amériques latines.<br><br>
-                    Ce projet s’est déroulé en 3 phases : <br>
+                    <strong>Ce projet s’est déroulé en 3 phases :</strong><br>
                     - La première phase s’articulait autour du choix de notre sujet, les raisons de notre choix, et l’élaboration de la maquette de notre site (en utilisant Figma). <br>
                     - La deuxième phase consistait en le développement de la partie statique de notre site. <br>
                     - Enfin, la dernière phase du projet consistait en l’élaboration de la partie dynamique avec l’introduction d’une API pour effectuer des requêtes sur notre base de données (en utilisant SQLiteStudio pour créer la base de données et Nocodb pour les requêtes API).
@@ -76,7 +76,7 @@
                 <h3>2. La base de données</h3>
                 <p>Pour que notre site web puisse prendre forme, nous allons le coder en HTML et CSS pour la partie statique (apparence globale du site), puis nous allons y ajouter du JavaScript qui pourra interagir avec une API pour le rendre plus dynamique. Voici la base de données de notre site :</p>
                 <img src="img/latino_bdd.jpg"/>
-                <p>Notre base de données et composée de 6 tables : <br>
+                <p>Notre base de données et composée de <strong>6 tables :</strong> <br>
                     - La table Pays : chaque pays contient un identifiant, un nom, une description, un drapeau et une image. La table pays est reliée aux quatres autres tables, c’est-à-dire qu’un pays va avoir une ou plusieurs cuisine, culture, nature et sport. <br>
                     - La table Cuisine : chaque spécialité culinaire est composée d’un identifiant, d’une description et d’une image.<br>
                     - La table Culture : chaque culture est composée d’un identifiant, d’une description et d’une image.<br>
@@ -85,7 +85,7 @@
                     - Enfin, nous avons une table supplémentaire qui concerne l'administrateur (qui contient un nom, un prénom, un identifiant, une adresse mail et un mot de passe). Cette table nous a servi pour la partie connexion de notre site. 
                 </p>
                 <h3>3. Les user cases</h3>
-                <p>Nous avons donc définit des cas d’usages afin de mieux comprendre toutes les fonctionnalités de notre site web : <br>
+                <p>Nous avons donc définit des cas d’usages afin de mieux comprendre toutes les fonctionnalités de notre site web. <br><br>
                     Comme expliqué précédemment l’administrateur pourra modifier la base de données à propos des pays présentés sur le site. Si cela est possible pour nous, nous aimerions que l’administrateur puisse également modifier le quizz.
                     Le quizz est un jeu où l’enfant peut jouer sans s’identifier. Il aura simplement à choisir les bonnes réponses pour avoir des points. Nous pensons réaliser un quizz où le joueur doit trouver les drapeaux des pays présentés.
                     L’utilisateur peut consulter le menu, où le concept du site lui est présenté et où il peut sélectionner l’article qu’il souhaite lire à propos du pays choisi.
@@ -111,7 +111,7 @@
                 <h3>2. Le site dynamique</h3>
                 <h4>Création de l'API</h4>
                 <p>Afin de rendre notre site dynamique, nous avons dû créer une API qui puisse interagir avec notre base de données via Javascript. <br>
-                    Pour cela, nous avons d’abord créé notre base de données sur SQLite Studio : <br>
+                    Pour cela, nous avons d’abord créé notre base de données sur SQLite Studio. <br>
                     Nous avons d’abord créé nos 6 tables Pays, Cuisine, Nature, Culture, Sport et Administrateur.
                     Puis nous avons créé des tables relationnelles qui feraient le lien entre les pays et leurs caractéristiques grâce à des clés étrangères. Nous avons fait cela pour les tables PaysCuisine, PaysCulture, PaysNature et PaysSport. <br>
                     Nous avons ensuite importé cette base de données dans nocodb et cet outil a permi de créer des listes de culture, nature, cuisine et sport pour chaque pays de la manière suivante :
@@ -163,8 +163,8 @@
                 </p>
                 <h2>III - Bilan sur le projet</h2>
                 <h3>Retour refléxif</h3>
-                <p>Avant de commencer notre projet, nous avions pour objectif de pouvoir ajouter un mini-jeu permettant aux utilisateurs de deviner les drapeaux d’un pays. Cela aurait pu se faire grâce à des méthodes GET qui comprenaient les inputs entrés par les utilisateurs avec les vrais id des pays concernées (un peu de la même façon que nous avions procédé pour la page de connexion). Malheureusement, nous n’avons pas pu aboutir à ce projet par manque de temps. <br>
-                    De plus, nous pensions qu’il serait aussi intéressant de pouvoir créer ou supprimer un pays avec des méthodes POST et DELETE, mais nous avons finalement choisi de modifier uniquement les pays en raison du temps imparti et du fait que nous pensions que la modification d’un pays était plus complète en terme de code. En effet, modifier un pays suggère d’agir les tables relationnelles : à chaque fois que nous ajouterons ou enlevions une cuisine d’un pays par exemple, il ne suffit pas de simplement modifier la liste cuisine du pays mais aussi de modifier la liste de pays d’une cuisine. Par exemple, si nous ajoutons la spécialité culinaire Empanadas pour le pays Cuba, alors il faut ajouter Empanadas à la Cuisine List de la table Pays et Cuba à la Pays List de la table Cuisine. Cela nécessite donc d’agir sur la table relationnelle PaysCuisine qui liait ces deux tables grâce en ajoutant une ligne conciliant ces 2 pays grâce à une requête POST. de la même façon, si nous retirons la spécialité culinaire Empanadas du pays Cuba, alors il faut supprimer cette ligne de la table PaysCuisine grâce à une requête DELETE. <br>
+                <p>Avant de commencer notre projet, nous avions pour objectif de pouvoir ajouter un mini-jeu permettant aux utilisateurs de deviner les drapeaux d’un pays. Cela aurait pu se faire grâce à des méthodes GET qui comprenaient les inputs entrés par les utilisateurs avec les vrais id des pays concernées (un peu de la même façon que nous avions procédé pour la page de connexion). Malheureusement, nous n’avons pas pu aboutir à ce projet par manque de temps. <br><br>
+                    De plus, nous pensions qu’il serait aussi intéressant de pouvoir créer ou supprimer un pays avec des méthodes POST et DELETE, mais nous avons finalement choisi de modifier uniquement les pays en raison du temps imparti et du fait que nous pensions que la modification d’un pays était plus complète en terme de code. En effet, modifier un pays suggère d’agir les tables relationnelles : à chaque fois que nous ajouterons ou enlevions une cuisine d’un pays par exemple, il ne suffit pas de simplement modifier la liste cuisine du pays mais aussi de modifier la liste de pays d’une cuisine. Par exemple, si nous ajoutons la spécialité culinaire Empanadas pour le pays Cuba, alors il faut ajouter Empanadas à la Cuisine List de la table Pays et Cuba à la Pays List de la table Cuisine. Cela nécessite donc d’agir sur la table relationnelle PaysCuisine qui liait ces deux tables grâce en ajoutant une ligne conciliant ces 2 pays grâce à une requête POST. de la même façon, si nous retirons la spécialité culinaire Empanadas du pays Cuba, alors il faut supprimer cette ligne de la table PaysCuisine grâce à une requête DELETE. <br><br>
                     La modification des pays nécessite alors plusieurs requêtes et celle-ci nous a permis de manipuler à la fois des requêtes GET (pour pré-remplir les champs des pays sélectionnés), POST (pour créer des relations entre les caractéristiques et les pays), DELETE (pour supprimer des relations entre les caractéristiques et les pays) et PATCH (pour mettre à jour la base de données modifiée).
                 </p>
                 <h3>Gestion de projet</h3>

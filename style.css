@@ -794,13 +794,19 @@ donc pas d'affolement la prochaine fois*/
   background-image: url(img/appareil.jpg);
 }
 #video:before {
-  background-image: url(img/camera.jpeg);
+  background-image: url(img/video.jpg);
 }
 #voyage:before {
-  background-image: url(img/avion.jpeg);
+  background-image: url(img/voyage.jpg);
 }
 #dessin:before {
   background-image: url(img/carnet.jpeg);
+}
+#logo:before {
+    background-image: url(img/logo_interet.png);
+}
+#community:before {
+    background-image: url(img/socialmedia.png);
 }
 #ps7:before {
     background-image: url(img/cast.png);
@@ -957,6 +963,55 @@ donc pas d'affolement la prochaine fois*/
 }
 /*fin des cards*/
 
+
+
+
+/*PAGE PHOTOS*/
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.photo_interet {
+    width: calc(25% - 10px); /* 4 photos par ligne avec espacement */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.photo_interet img {
+    max-width: 100%;
+    padding: 10px;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.photo_interet:hover img {
+    transform: scale(1.05); /* Zoom au survol */
+}
+
+.photo_interet::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Filtre sombre */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.photo_interet:hover::before {
+    opacity: 1; /* Affiche le filtre sombre au survol */
+}
+
+	
 
 
 /*FOOTER*/
@@ -1197,6 +1252,14 @@ donc pas d'affolement la prochaine fois*/
 
     .page-content .ps7 .rapport {
         margin-bottom: 5%;
+    }
+
+
+
+    .photo_interet {
+        width: calc(100% - 10px); /* 4 photos par ligne avec espacement */
+        margin-bottom: 20px;
+        position:relative;
     }
 
 
