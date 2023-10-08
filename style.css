@@ -519,6 +519,41 @@ body .header .fixation-header .navbar .burger{
     font-size: 1.25vw;
     color: #4c5155;
 }
+/*hard skills*/
+/* Styles pour la section contenant les images */
+.competences_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Alignez les images à gauche */
+    align-content: flex-start; /* Alignez les images en haut de la ligne */
+    gap: 10px; /* Espace entre les images */
+    max-width: 65%; /* Largeur maximale de la section (ajustez selon vos besoins) */
+    margin: 0 auto; /* Centrez la section horizontalement sur la page */
+}
+
+/* Styles pour chaque image */
+.competence_images {
+    width: calc(16.66% - 10px); /* 16.66% permet d'afficher 6 images par ligne avec un espace de 10px entre chaque */
+    height: auto; /* Gardez la hauteur proportionnelle à la largeur */
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transform: rotate(calc(var(--rotate) * 1deg));
+    --rotate: random(360);
+}
+
+.competences_images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .competence_images {
+        width: calc(33.33% - 10px); /* 33.33% permet d'afficher 3 images par ligne avec un espace de 10px entre chaque */
+    }
+}
+
 
 
 
@@ -688,6 +723,26 @@ body .header .fixation-header .navbar .burger{
 la même présentation que la page ps7
 donc pas d'affolement la prochaine fois*/
 
+/*IFRAMES*/
+/* Style pour l'iframe en mode bureau */
+#pdf_iframe {
+    display: flex;
+    width: 50%; /* Par défaut, prend 50% de la largeur */
+    height: 500px; /* Hauteur par défaut */
+    max-width: 100%; /* Ne dépasse pas la largeur de l'écran */
+    display: block; /* Pour éviter les espaces vides sous l'iframe */
+    margin: 0 auto; /* Centrer horizontalement */
+    padding-bottom: 10px;
+}
+
+/* Style pour l'iframe en mode mobile */
+@media (max-width: 767px) {
+    #pdf_iframe {
+        width: 100%; /* Pleine largeur de l'écran en mode mobile */
+        height: auto; /* Hauteur adaptée à l'écran en mode mobile */
+    }
+}
+
 
 
 
@@ -791,7 +846,7 @@ donc pas d'affolement la prochaine fois*/
   transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
 }
 #photo:before {
-  background-image: url(img/appareil.jpg);
+  background-image: url(img/photo.jpg);
 }
 #video:before {
   background-image: url(img/video.jpg);
@@ -800,55 +855,55 @@ donc pas d'affolement la prochaine fois*/
   background-image: url(img/voyage.jpg);
 }
 #dessin:before {
-  background-image: url(img/carnet.jpeg);
+  background-image: url(img/dessin.jpg);
 }
 #logo:before {
-    background-image: url(img/logo_interet.png);
+    background-image: url(img/logo.jpg);
 }
 #community:before {
-    background-image: url(img/socialmedia.png);
+    background-image: url(img/socialmedia.jpg);
 }
 #ps7:before {
-    background-image: url(img/cast.png);
+    background-image: url(img/ps7/cast.png);
 }
 #ihm:before {
-    background-image: url(img/crush.png);
+    background-image: url(img/ihm/crush.png);
 }
 #analysedonnees:before {
-    background-image: url(img/datavore.png);
+    background-image: url(img/data/datavore.png);
 }
 #evalux:before {
-    background-image: url(img/ux.png);
+    background-image: url(img/eval/ux.png);
 }
 #perception:before {
-    background-image: url(img/perception.png);
+    background-image: url(img/psycho/perception.png);
 }
 #crea:before {
-    background-image: url(img/crea.png);
+    background-image: url(img/crea/crea.png);
 }
 #ethno:before {
-    background-image: url(img/ethno.png);
+    background-image: url(img/ethno/ethno.png);
 }
 #enquanti:before {
-    background-image: url(img/enquanti.png);
+    background-image: url(img/epq/enquanti.png);
 }
 #reflexivite:before {
-    background-image: url(img/reflexivite.png);
+    background-image: url(img/reflexivite/reflexivite.png);
 }
 #latino:before {
-    background-image: url(img/latino.png);
+    background-image: url(img/latino/latino.png);
 }
 #ps8:before {
-    background-image: url(img/ps8.png);
+    background-image: url(img/ps8/ps8.png);
 }
 #collab:before {
-    background-image: url(img/collab.png);
+    background-image: url(img/collab/collab.png);
 }
 #hanoi:before {
-    background-image: url(img/hanoi.png);
+    background-image: url(img/hanoi/hanoi.png);
 }
 #ca1:before {
-    background-image: url(img/ca1.png);
+    background-image: url(img/ca1/ca1.png);
 }
 
 .content {
@@ -1009,6 +1064,12 @@ donc pas d'affolement la prochaine fois*/
 
 .photo_interet:hover::before {
     opacity: 1; /* Affiche le filtre sombre au survol */
+}
+
+/*PAGE DES LOGOS*/
+#carrousel_logo img{
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 	

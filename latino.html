@@ -75,7 +75,7 @@
                 </p>
                 <h3>2. La base de données</h3>
                 <p>Pour que notre site web puisse prendre forme, nous allons le coder en HTML et CSS pour la partie statique (apparence globale du site), puis nous allons y ajouter du JavaScript qui pourra interagir avec une API pour le rendre plus dynamique. Voici la base de données de notre site :</p>
-                <img src="img/latino_bdd.jpg"/>
+                <img src="img/latino/latino_bdd.jpg"/>
                 <p>Notre base de données et composée de <strong>6 tables :</strong> <br>
                     - La table Pays : chaque pays contient un identifiant, un nom, une description, un drapeau et une image. La table pays est reliée aux quatres autres tables, c’est-à-dire qu’un pays va avoir une ou plusieurs cuisine, culture, nature et sport. <br>
                     - La table Cuisine : chaque spécialité culinaire est composée d’un identifiant, d’une description et d’une image.<br>
@@ -90,12 +90,12 @@
                     Le quizz est un jeu où l’enfant peut jouer sans s’identifier. Il aura simplement à choisir les bonnes réponses pour avoir des points. Nous pensons réaliser un quizz où le joueur doit trouver les drapeaux des pays présentés.
                     L’utilisateur peut consulter le menu, où le concept du site lui est présenté et où il peut sélectionner l’article qu’il souhaite lire à propos du pays choisi.
                 </p>
-                <img src="img/laitno_usercases.png"/>
+                <img src="img/latino/laitno_usercases.png"/>
                 <h3>4. Le moodboard</h3>
                 <p>Etant donné que notre site web s'adresse principalement à des enfants, nous avons imaginé des couleurs vives et des illustrations assez enfantines. Nous souhaitons également
                     que le site soit très intuitif afin de les guider au maximum dans leur navigation sans les perdre. Notre site devra donc respecter des critères d’UX assez strictes, notamment concernant le guidage et le contrôle des actions explicites.
                 </p>
-                <img src="img/latino_moodboard.png"/>
+                <img src="img/latino/latino_moodboard.png"/>
                 <h3>5. La maquette</h3>
                 <div class="proto">
                     <iframe class="figma" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fxks7qP5o6nbsZ8aa8iXDq8%2FMaquette-projet-web%3Fpage-id%3D0%253A1%26node-id%3D2-2%26starting-point-node-id%3D2%253A2%26scaling%3Dscale-down%26mode%3Ddesign%26t%3DW8mbu7NQmF2Quv9D-1" allowfullscreen></iframe>
@@ -117,9 +117,9 @@
                     Nous avons ensuite importé cette base de données dans nocodb et cet outil a permi de créer des listes de culture, nature, cuisine et sport pour chaque pays de la manière suivante :
                 </p>
                 <div class="carrousel">
-                    <div><img src="img/latino_screenbdd.png"></div>
-                    <div><img src="img/latino_screenbdd2.png"></div>
-                    <div><img src="img/latino_screen_nocodb.png"></div>
+                    <div><img src="img/latino/latino_screenbdd.png"></div>
+                    <div><img src="img/latino/latino_screenbdd2.png"></div>
+                    <div><img src="img/latino/latino_screen_nocodb.png"></div>
                 </div>
                 <script>
                     $(document).ready(function(){
@@ -133,8 +133,8 @@
                 <p>A partir de là, nous avons pu mettre en place un reverse proxy et un serveur afin de faire tourner notre site et nocodb sur les mêmes ports et effectuer des requêtes API pour interagir avec notre base de données.
                 </p>
                 <div class="carrousel">
-                    <div><img src="img/latino_proxy.png"></div>
-                    <div><img src="img/latino_proxy2.png"></div>
+                    <div><img src="img/latino/latino_proxy.png"></div>
+                    <div><img src="img/latino/latino_proxy2.png"></div>
                 </div>
                 <h4>Les fonctionnalités du site</h4>
                 <p>Grâce à cette méthode, nous pouvons afficher en temps réel les bonnes informations selon ce que l'utilisateur sélectionne (pays, nature, culture, cuisine, sport). Voici un exemple avec le Brésil.
@@ -144,20 +144,20 @@
                     Cela est possible grâce à notre requête API qui va parcourir parmi la liste cuisine du pays en question par exemple, les informations relatives à ces cuisines là pour les afficher.
                 </p>
                 <div class="carrousel">
-                    <div><img src="img/latino_screen_site.png"></div>
-                    <div><img src="img/latino_screen_site2.png"></div>
-                    <div><img src="img/latino_screen_site3.png"></div>
-                    <div><img src="img/latino_screen_site4.png"></div>
-                    <div><img src="img/latino_screen_site5.png"></div>
-                    <div><img src="img/latino_screen_site6.png"></div>
+                    <div><img src="img/latino/latino_screen_site.png"></div>
+                    <div><img src="img/latino/latino_screen_site2.png"></div>
+                    <div><img src="img/latino/latino_screen_site3.png"></div>
+                    <div><img src="img/latino/latino_screen_site4.png"></div>
+                    <div><img src="img/latino/latino_screen_site5.png"></div>
+                    <div><img src="img/latino/latino_screen_site6.png"></div>
                 </div>
                 <p>Cela fonctionne également pour l’administrateur du site : tout d’abord, l’administrateur peut accéder à son compte via la page de connexion. Lorsqu’il entre les mauvais identifiants un message d’avertissement apparaît pour le prévenir de son erreur et l’accès ne lui est autorisé que si le mail et le mot de passe sont les bons (la vérification se fait grâce à une requête GET et une comparaison avec les données entrées par l’utilisateur). <br>
                     Une fois authentifié, l’administrateur peut agir sur la base de données pour modifier un pays et les informations relatives à ce pays :
                 </p>
                 <div class="carrousel">
-                    <div><img src="img/latino_screen_admin.png"></div>
-                    <div><img src="img/latino_screen_admin2.png"></div>
-                    <div><img src="img/latino_screen_admin3.png"></div>
+                    <div><img src="img/latino/latino_screen_admin.png"></div>
+                    <div><img src="img/latino/latino_screen_admin2.png"></div>
+                    <div><img src="img/latino/latino_screen_admin3.png"></div>
                 </div>
                 <p>Une fois le pays sélectionné, les informations relatives à ce pays sont directement pré-remplies dans les champs requis. Cela permet une modification plus facile des données pour l’administrateur. L’administrateur peut donc désormais modifier les informations (comme l’image du pays, sa description, ses cultures, etc) et enregistrer ses modifications qui seront sauvegardées dans la base de données grâce à une méthode ‘PATCH’ qui met à jour la base de données avec les nouvelles modifications apportées.
                 </p>
@@ -170,7 +170,7 @@
                 <h3>Gestion de projet</h3>
                 <p>Pour que notre projet se passe au mieux, nous avons établi une matrice des risques afin d’identifier et d’éviter les risques qui pourraient affecter notre projet. <br>
                     Cette méthode nous a été très utile et nous a permis de gagner du temps sur des risques que nous avions prévu et donc de minimiser les effets négatifs sur la qualité de notre projet. Parmis les risques : perte de données, absence d'un membre du groupe, mauvaise répartition du travail, manque de communication, etc.</p>
-                <img src="img/latino_gestion.png"/>
+                <img src="img/latino/latino_gestion.png"/>
             </div>
         </section>
 

@@ -7,7 +7,12 @@
         <title>Portfolio Selma El Babarti</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-       
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     </head>
 
     
@@ -57,11 +62,55 @@
 
    <section class="page-content">
 
-        <section class="presentation-image">
-            <div class="image">
-                <img width="50%" src="img/travaux.jpg"/>
-            </div>
-        </section>
+    <section class="ps7" id="projet">
+        <h1>social Media</h1>
+        <p>Depuis mai 2023, j'occupe le rôle de community manager bénévole au sein de l'association <a href="https://www.mjclabaule.fr" target="_blank" style="color: inherit;">Maison des Jeunes et de la Culture</a> de La Baule.
+            <br><br> Je m'occupe prinicipalement du <a href="https://www.instagram.com/mjclabaule.fr/" target="_blank" style="color: inherit;">compte Instagram de celui-ci</a>. 
+        </p>
+        <h2>Quelques élements de stratégie et graphiques</h2>
+        <div class="carrousel" id="carrousel_logo">
+            <div><img src="img/social_media/stratégie/1.jpg"></div>
+            <div><img src="img/social_media/stratégie/2.jpg"></div>
+            <div><img src="img/social_media/stratégie/3.jpg"></div>
+            <div><img src="img/social_media/stratégie/4.jpg"></div>
+            <div><img src="img/social_media/stratégie/5.jpg"></div>
+            <div><img src="img/social_media/stratégie/6.jpg"></div>
+            <div><img src="img/social_media/stratégie/7.jpg"></div>
+            <div><img src="img/social_media/stratégie/8.jpg"></div>
+            <div><img src="img/social_media/stratégie/9.jpg"></div>
+            <div><img src="img/social_media/stratégie/10.jpg"></div>
+            <div><img src="img/social_media/stratégie/11.jpg"></div>
+            <div><img src="img/social_media/stratégie/12.jpg"></div>
+            <div><img src="img/social_media/stratégie/13.jpg"></div>
+            <div><img src="img/social_media/stratégie/15.jpg"></div>
+            <div><img src="img/social_media/stratégie/16.jpg"></div>
+            <div><img src="img/social_media/stratégie/17.jpg"></div>
+            <div><img src="img/social_media/stratégie/18.jpg"></div>
+            <div><img src="img/social_media/stratégie/19.jpg"></div>
+            <div><img src="img/social_media/stratégie/20.jpg"></div>
+            <div><img src="img/social_media/stratégie/21.jpg"></div>
+            <div><img src="img/social_media/stratégie/22.jpg"></div>
+            <div><img src="img/social_media/stratégie/23.jpg"></div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('.carrousel').slick({
+                dots: true, // Active les points indicateurs de pagination
+                autoplay: true, // Active la lecture automatique
+                autoplaySpeed: 2000, // Définit la vitesse de lecture automatique (en millisecondes)
+                });
+            });
+        </script>
+        <h2>Quelques posts</h2>
+        <div class="carrousel" id="carrousel_logo">
+            <div><img src="img/social_media/ex1.png" ></div>
+            <div><img src="img/social_media/ex2.png" ></div>
+            <div><img src="img/social_media/ex3.png" ></div>
+            <div><img src="img/social_media/ex4.png" ></div>
+            <div><img src="img/social_media/ex5.png" ></div>
+            <div><img src="img/social_media/ex6.png" ></div>
+        </div>
+    </section>
 
    </section>
 

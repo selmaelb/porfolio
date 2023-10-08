@@ -7,77 +7,123 @@
         <title>Portfolio Selma El Babarti</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-       
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     </head>
 
     
-<body>
-    <header class="header">
-        <div class="fixation-header">
-            <nav class="navbar">
-                <div class = "profile">
-                    <img src="img/me.jpg" width="100">
-                    <h1>
-                        <a href="#index" style="color: inherit">Selma EL BABARTI</a>
-                    </h1>
-                </div>
-                <ul id="listeMobile" class="liste">
-                    <li><a href="parcours.html" style="color: inherit" id="lienPageParcours">Mon parcours</a></li>
-                    <li><a href="compétences.html" style="color: inherit" id="lienPageComp"> Mes compétences</a></li>
-                    <li><a href="projets.html" style="color: inherit" id="lienPageProjets" >Mes projets</a></li>
-                    <li><a href="interet.html" style="color: inherit" id="lienPageCentre">Mes centres d'intérêt</a></li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/selma-el-babarti/"
-                        target="_BLANK" style="color: inherit">
-                        <svg width="20px" height="20" class="icon linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+    <body>
+        <header class="header">
+            <div class="fixation-header">
+                <nav class="navbar">
+                    <div class = "profile">
+                        <img src="img/me.jpg" width="100">
+                        <h1>
+                            <a href="#index" style="color: inherit">Selma EL BABARTI</a>
+                        </h1>
+                    </div>
+                    <ul id="listeMobile" class="liste">
+                        <li><a href="parcours.html" style="color: inherit" id="lienPageParcours">Mon parcours</a></li>
+                        <li><a href="compétences.html" style="color: inherit" id="lienPageComp"> Mes compétences</a></li>
+                        <li><a href="projets.html" style="color: inherit" id="lienPageProjets" >Mes projets</a></li>
+                        <li><a href="interet.html" style="color: inherit" id="lienPageCentre">Mes centres d'intérêt</a></li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/selma-el-babarti/"
+                            target="_BLANK" style="color: inherit">
+                            <svg width="20px" height="20" class="icon linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <button id="burgerid" class="burger">
+                        <a href="#" style="color: inherit">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
                         </a>
-                    </li>
-                </ul>
-                <button id="burgerid" class="burger">
-                    <a href="#" style="color: inherit">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-                    </a>
-                </button>
+                    </button>
 
-                <button id="burgerid2" class="burger" style="display:none">
-                    <a href="#" style="color: inherit">
-                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                        width="24" height="24"
-                        viewBox="0 0 24 24">
-                        <path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"></path>
-                        </svg>                    
-                    </a>
-                </button>
-               
+                    <button id="burgerid2" class="burger" style="display:none">
+                        <a href="#" style="color: inherit">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"></path>
+                            </svg>                    
+                        </a>
+                    </button>
+                
 
 
-            </nav>
-        </div>
-    </header>
-
-   <section class="page-content">
-
-        <section class="presentation-image">
-            <div class="image">
-                <img width="50%" src="img/travaux.jpg"/>
+                </nav>
             </div>
+        </header>
+
+        <section class="page-content">
+            <section class="ps7" id="projet">
+                <h1>Création de logos</h1>
+                <p>Que ce soit pour une association, pour des amis ou juste par envie, depuis que j'ai découvert Adobe Illustrator je ne peux plus m'arrêter.
+                    <br><br> J'adore créer des logos colorés et adaptés selon les envies de chacuns. En voici quelques exemples : 
+                </p>
+                <h2>Logos pour la <a href="https://www.mjclabaule.fr" target="_blank" style="color: inherit;">MJC de La Baule</a></h2>
+                <p>La MJC de la Baule est un lieu d'accueil tout public, qui propose différentes activités aussi bien pour les enfants que pour les adultes;
+                    <br>Son accueil de loisirs pour les enfants est réparti en plusieurs groupes selon l'âge de ceux-ci. On y retrouve ;
+                    <ul>
+                        <li><strong>Les Crevettes :</strong> pour les 3-4 ans</li>
+                        <li><strong>Les Bigorneaux :</strong> pour les 4-5 ans </li>
+                        <li><strong>Les Chamboules :</strong> pour les 6-7 ans</li>
+                        <li><strong>Les Surfeurs : </strong> pour les 8-10 ans</li>
+                    </ul>
+                    En tant que community manager bénévole pour cette association, j'ai eu l'honneur de pouvoir leur proposer une série de 4 logos pour chacun des cex groupes. Ces logos sont à ce jour utilisé sur le compte instagram officiel de la MJC, mais également bientot en interne pour leurs plannings.
+                    <br> Les voici :
+                </p>
+                <div class="carrousel" id="carrousel_logo">
+                    <div><img src="img/logo/LES CREVETTES.jpg"></div>
+                    <div><img src="img/logo/LES BIGORNEAUX.jpg"></div>
+                    <div><img src="img/logo/LES CHAMBOULES.jpg"></div>
+                    <div><img src="img/logo/LES SURFEURS.jpg"></div>
+                </div>
+                <script>
+                    $(document).ready(function(){
+                        $('.carrousel').slick({
+                        dots: true, // Active les points indicateurs de pagination
+                        autoplay: true, // Active la lecture automatique
+                        autoplaySpeed: 2000, // Définit la vitesse de lecture automatique (en millisecondes)
+                        });
+                    });
+                </script>
+                <h2>Logo pour des amis</h2>
+                <p>Très enthousiaste de ma nouvelle passion pour Illustrator, j'ai proposé mes services à des amis pour entrainer mon grand art.
+                    Mon ami Rémy m'a alors proposé de refaire au goût du jour son logo pour son blog de cybersécurité <a href="https://fxoverflow.me">Fxoverflow</a>.
+                    <br>Voici donc un avant-après du logo : 
+                </p>
+                <div class="carrousel" id="carrousel_logo">
+                    <div><img src="img/logo/logo_fxoverflow_avant.jpeg" height="300px"></div>
+                    <div><img src="img/logo/fxlogoreal.png" height="300px"></div>
+                </div>
+                <p>D'autres amis m'ont également fait des petites demandes très colorées !</p>
+                <div class="carrousel" id="carrousel_logo">
+                    <div><img src="img/logo/mme_citron.png" height="300px"></div>
+                    <div><img src="img/logo/rin_logo.png" height="300px"></div>
+                </div>
+            </section>
+                
         </section>
 
-   </section>
-
-    <footer class="footer">
-        <div class="coordonnees">
-            <h3 id="contact">Mes coordonnées</h3>
-            <p><a href="mailto:selma.elbabarti@gmail.com">selma.elbabarti@gmail.com</a></p>
-            <p><a href="mailto:selma.el-babarti@etu.univ-nantes.fr">selma.el-babarti@etu.univ-nantes.fr</a></p>
-            <p>07.50.23.05.18</p>
-        </div>
-        <div class="image">
-            <img src="img/logo.png" ></img>
-        </div>
-    </footer>
-   
-</body>
+        <footer class="footer">
+            <div class="coordonnees">
+                <h3 id="contact">Mes coordonnées</h3>
+                <p><a href="mailto:selma.elbabarti@gmail.com">selma.elbabarti@gmail.com</a></p>
+                <p><a href="mailto:selma.el-babarti@etu.univ-nantes.fr">selma.el-babarti@etu.univ-nantes.fr</a></p>
+                <p>07.50.23.05.18</p>
+            </div>
+            <div class="image">
+                <img src="img/logo.png" ></img>
+            </div>
+        </footer>
+    
+    </body>
 
 <script src='main.js'></script>
 
