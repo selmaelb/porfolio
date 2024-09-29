@@ -17,7 +17,7 @@ body .header .fixation-header .navbar {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: #a8cef6;
+    background-color: #f9bccc;
     align-items: center;
     height: 80px;
 }
@@ -52,7 +52,7 @@ body .header .fixation-header .navbar .liste{
 body .header .fixation-header .navbar .liste li{
     margin-left: 20px;
     cursor: pointer;
-    border-bottom: 1px solid #a8cef6 ;
+    border-bottom: 1px solid #f9bccc ;
 }
 
 body .header .fixation-header .navbar .liste li:hover{
@@ -81,7 +81,7 @@ body .header .fixation-header .navbar .burger{
 
 .page-content .presentation{
     margin-top: 5%;
-    max-width: 80%;
+    max-width: 98%;
 }
 
 .page-content .presentation h1{
@@ -93,7 +93,7 @@ body .header .fixation-header .navbar .burger{
 
 .page-content .presentation p{
     line-height: 30px;
-    color : #0e3354;
+    color : #000000;
     font-size: 20px;
 }
 
@@ -114,7 +114,7 @@ body .header .fixation-header .navbar .burger{
 }
 
 .page-content .presentation button:hover{
-    background-color: #0e3354;
+    background-color: #f9bccc;
     color:#ffffff;
     border-bottom-color: #ffffff ;
 }
@@ -136,6 +136,13 @@ body .header .fixation-header .navbar .burger{
     height: auto;
 }
 
+.highlight {
+    background-image: url(img/surligneur.png); /* Lien vers l'image du surlignage fait à la main */
+    background-size: 100% 110%; /* Ajuste la taille de l'image pour qu'elle prenne toute la largeur et hauteur du texte */
+    background-repeat: no-repeat;
+    padding: 2px 4px; /* Ajoute de l’espace autour du texte */
+    border-radius: 3px; /* Légère courbe pour les coins */
+}
 
 
 
@@ -248,7 +255,7 @@ body .header .fixation-header .navbar .burger{
     margin-top: -10px;
     background: #fff;
     border-radius: 10px;
-    border: 4px solid #a8cef6;
+    border: 4px solid #f9bccc;
     z-index: 10;
 }
   
@@ -289,7 +296,7 @@ body .header .fixation-header .navbar .burger{
     
     line-height: 1em;
     font-size: 0.66666em;
-    color: #a8cef6;
+    color: #f9bccc;
     vertical-align: middle;
   }
   
@@ -361,7 +368,7 @@ body .header .fixation-header .navbar .burger{
       margin-left: -9px;
       background: #fff;
       border-radius: 10px;
-      border: 4px solid #a8cef6;
+      border: 4px solid #f9bccc;
       z-index: 10;
   }
   
@@ -440,7 +447,7 @@ body .header .fixation-header .navbar .burger{
     border-radius: .25rem;
     text-decoration:none;
     margin-bottom: 5%;
-    background:#dee7ee;
+    background:#eedeed;
     margin-right: 5%;
 }
 
@@ -714,7 +721,7 @@ body .header .fixation-header .navbar .burger{
     text-decoration:none;
     margin-top: 5%;
     margin-bottom: 5%;
-    background:#dee7ee;
+    background:#eedeed;
     margin-right: 5%;
 }
 /*fin page des projets individuels
@@ -1159,7 +1166,7 @@ donc pas d'affolement la prochaine fois*/
         overflow: hidden;
         opacity: 0;
         height: calc(100vh - 55px);
-        background: #a8cef6;
+        background: #f9bccc;
         transition: all .4s ease-out;
     }
 
